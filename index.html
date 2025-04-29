@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      overflow: hidden;
+      font-family: sans-serif;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      position: relative;
+      z-index: 10;
+      font-size: 3rem;
+      margin-top: 20vh;
+      animation: pop 2s ease forwards;
+      opacity: 0;
+    }
+    @keyframes pop {
+      to {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday!</h1>
+  <canvas id="fireworks"></canvas>
+  <script src="fireworks.js"></script>
+</body>
+</html>
